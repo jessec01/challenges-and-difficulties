@@ -1,0 +1,79 @@
+name: "🎯 Proponer Nuevo Reto"
+description: "Comparte una idea para un nuevo desafío de programación"
+title: "[RETO]: "
+labels: ["reto", "propuesta"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¡Gracias por contribuir con un nuevo reto! Completa la información para que la comunidad pueda evaluarlo.
+
+  - type: input
+    id: titulo
+    attributes:
+      label: "📌 Título del reto"
+      description: "Nombre descriptivo y conciso"
+      placeholder: "Ej: Optimización de consultas con índices compuestos"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: nivel
+    attributes:
+      label: "📊 Nivel de dificultad"
+      options:
+        - "🟢 Básico"
+        - "🟡 Intermedio"
+        - "🔴 Avanzado"
+    validations:
+      required: true
+
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: "📝 Descripción del reto"
+      description: "Explica claramente el problema a resolver"
+      placeholder: "Diseñar un algoritmo que..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: requisitos
+    attributes:
+      label: "✅ Requisitos funcionales"
+      description: "Lista de criterios que debe cumplir la solución"
+      placeholder: |
+        - [ ] Recibir X entrada
+        - [ ] Calcular Y usando fórmula Z
+        - [ ] Validar que...
+    validations:
+      required: true
+
+  - type: textarea
+    id: casos_prueba
+    attributes:
+      label: "🔍 Casos de prueba sugeridos"
+      description: "Ejemplos de entrada y salida esperada"
+      placeholder: |
+        Entrada: base=5, altura=3 → Salida: 7.50
+        Entrada: base=0 → Error: "Base debe ser positiva"
+    validations:
+      required: true
+
+  - type: textarea
+    id: conceptos
+    attributes:
+      label: "💡 Conceptos a practicar"
+      description: "Habilidades que se desarrollan con este reto"
+      placeholder: |
+        - Variables y tipos de datos
+        - Validación de entradas
+        - Operaciones aritméticas
+
+  - type: checkboxes
+    id: compromiso
+    attributes:
+      label: "🤝 Compromiso"
+      options:
+        - label: "Si el reto es aceptado, puedo ayudar a crear la estructura completa (challenge.md, requirements.md, test-data.sql)"
+          required: false

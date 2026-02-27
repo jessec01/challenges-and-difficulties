@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "📚 Guía de contribución"
+    url: https://github.com/tu-usuario/retos-y-desafios/blob/main/CONTRIBUTING.md
+    about: Revisa nuestra guía antes de crear un issue
+  - name: "💬 Discord / Comunidad"
+    url: https://discord.gg/tu-invite
+    about: Únete a nuestra comunidad para discutir retos
+    
